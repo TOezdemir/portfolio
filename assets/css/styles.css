@@ -78,10 +78,10 @@
     }
 
     .grid {
-      align-items: flex-start;
       display: grid;
       grid-template-columns: repeat(12, minmax(0, 1fr));
       column-gap: var(--space-4);
+      align-items: flex-start;
     }
 
     header {
@@ -172,16 +172,15 @@
       grid-column: 4 / span 9;
     }
 
-    
-.hero-block {
-  max-width: 40rem;
-}
+    .hero-block {
+      max-width: 40rem;
+    }
 
-.hero-block > * {
-  margin-left: 0;
-}
+    .hero-block > * {
+      margin-left: 0;
+    }
 
-.hero-title {
+    .hero-title {
       font-size: clamp(2.5rem, 4vw, 3.5rem);
       line-height: 1.05;
       text-transform: uppercase;
@@ -195,14 +194,12 @@
     }
 
     .hero-text {
-      margin-left: 0;
       max-width: 48rem;
       font-size: 1rem;
       margin-bottom: var(--space-4);
     }
 
     .hero-tags {
-      margin-left: 0;
       font-family: var(--font-mono);
       display: flex;
       flex-wrap: wrap;
@@ -212,12 +209,10 @@
     }
 
     .hero-tags span {
-      
       padding: var(--space-1) var(--space-2);
     }
 
     .hero-actions {
-      margin-left: 0;
       margin-top: var(--space-4);
       display: flex;
       flex-wrap: wrap;
@@ -225,7 +220,6 @@
     }
 
     .hero-meta {
-      margin-left: 0;
       margin-top: var(--space-4);
       font-size: 0.875rem;
     }
@@ -254,8 +248,7 @@
     }
 
     .list-item {
-      
-      padding-top: var(--space-3);
+      /* kein padding-top, bündig mit section-body */
     }
 
     .list-item h3 {
@@ -280,7 +273,6 @@
     }
 
     .list-tags span {
-      
       padding: 2px 6px;
     }
 
@@ -330,8 +322,7 @@
     }
 
     .timeline-item {
-      
-      padding-top: var(--space-2);
+      /* kein padding-top, bündig mit section-body */
     }
 
     .timeline-item small {
@@ -364,7 +355,6 @@
     }
 
     footer .grid {
-      align-items: flex-start;
       align-items: center;
     }
 
@@ -379,7 +369,6 @@
 
     @media (max-width: 800px) {
       .grid {
-      align-items: flex-start;
         grid-template-columns: repeat(4, minmax(0, 1fr));
       }
       .brand {
