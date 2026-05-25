@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tolgay Özdemir — Procurement · eProcurement · Web</title>
+  <meta name="description" content="Portfolio von Tolgay Özdemir im International Typographic Style: strategischer Einkauf, Ivalua-Implementierung und Web Development." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-bg: #ffffff;
+      --color-text: #000000;
+      --color-accent: #e53935; /* plakative Highlightfarbe */
+      --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+      --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      --space-1: 4px;
+      --space-2: 8px;
+      --space-3: 12px;
+      --space-4: 16px;
+      --space-5: 20px;
+      --space-6: 24px;
+      --space-8: 32px;
+      --space-10: 40px;
+      --space-12: 48px;
+      --space-16: 64px;
+      --grid-max: 1120px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.5;
+      background: var(--color-bg);
+      color: var(--color-text);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a[href], button {
+      cursor: pointer;
+    }
+
+    button {
+      border: none;
+      background: none;
+      font: inherit;
+      color: inherit;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--color-accent);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: var(--space-4);
+      padding: var(--space-2) var(--space-4);
+      background: var(--color-accent);
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .skip-link:focus-visible {
+      left: var(--space-4);
+    }
+
+    .page {
+      max-width: var(--grid-max);
+      margin-inline: auto;
+      padding-inline: var(--space-4);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      column-gap: var(--space-4);
+    }
+
+    header {
+      margin-bottom: var(--space-10);
+    }
+
+    .header-inner {
+      padding-block: var(--space-4);
+      align-items: center;
+    }
+
+    .brand {
+      grid-column: 1 / span 6;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.875rem;
+      font-weight: 700;
+    }
+
+    .brand span {
+      display: block;
+    }
+
+    .brand span:first-child {
+      font-size: 0.75rem;
+    }
+
+    .header-nav {
+      grid-column: 7 / span 3;
+      justify-self: end;
+      display: flex;
+      gap: var(--space-3);
+      font-size: 0.875rem;
+      text-transform: uppercase;
+    }
+
+    .header-nav a {
+      padding-block: 2px;
+    }
+
+    .header-controls {
+      grid-column: 10 / span 3;
+      justify-self: end;
+      display: flex;
+      gap: var(--space-2);
+      align-items: center;
+    }
+
+    .btn-outline {
+      border: 2px solid #000000;
+      padding: var(--space-2) var(--space-3);
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+    }
+
+    .btn-accent {
+      border: 2px solid #000000;
+      background: var(--color-accent);
+      color: #ffffff;
+      padding: var(--space-2) var(--space-3);
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+    }
+
+    main {
+      padding-block: var(--space-8) var(--space-12);
+    }
+
+    .section {
+      padding-block: var(--space-12);
+    }
+
+    .section-head {
+      grid-column: 1 / span 4;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      font-weight: 700;
+    }
+
+    .section-head span {
+      display: block;
+    }
+
+    .section-body {
+      grid-column: 5 / span 8;
+    }
+
+    .hero-title {
+      font-size: clamp(2.5rem, 4vw, 3.5rem);
+      line-height: 1.05;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: var(--space-4);
+    }
+
+    .hero-title em {
+      font-style: normal;
+      color: var(--color-accent);
+    }
+
+    .hero-text {
+      max-width: 48rem;
+      font-size: 1rem;
+      margin-bottom: var(--space-4);
+    }
+
+    .hero-tags {
+      font-family: var(--font-mono);
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+
+    .hero-tags span {
+      
+      padding: var(--space-1) var(--space-2);
+    }
+
+    .hero-actions {
+      margin-top: var(--space-4);
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+    }
+
+    .hero-meta {
+      margin-top: var(--space-4);
+      font-size: 0.875rem;
+    }
+
+    .hero-meta dl {
+      display: grid;
+      grid-template-columns: minmax(0, 8rem) minmax(0, 1fr);
+      row-gap: var(--space-2);
+      column-gap: var(--space-4);
+    }
+
+    .hero-meta dt {
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.75rem;
+    }
+
+    .hero-meta dd {
+      margin: 0;
+    }
+
+    .list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-4);
+    }
+
+    .list-item {
+      
+      padding-top: var(--space-3);
+    }
+
+    .list-item h3 {
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 0.875rem;
+      margin-bottom: var(--space-2);
+    }
+
+    .list-item p {
+      font-size: 0.875rem;
+    }
+
+    .list-tags {
+      font-family: var(--font-mono);
+      margin-top: var(--space-2);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-1);
+    }
+
+    .list-tags span {
+      
+      padding: 2px 6px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-4);
+    }
+
+    .project {
+      
+      padding-top: var(--space-3);
+    }
+
+    .project h3 {
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 0.875rem;
+      margin-bottom: var(--space-2);
+    }
+
+    .project p {
+      font-size: 0.875rem;
+      margin-bottom: var(--space-2);
+    }
+
+    .project-meta {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      margin-bottom: var(--space-2);
+    }
+
+    .project-links {
+      display: flex;
+      gap: var(--space-2);
+      flex-wrap: wrap;
+    }
+
+    .timeline {
+      display: grid;
+      gap: var(--space-3);
+      font-size: 0.875rem;
+    }
+
+    .timeline-item {
+      
+      padding-top: var(--space-2);
+    }
+
+    .timeline-item small {
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.75rem;
+    }
+
+    .timeline-item h3 {
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+
+    .contact-actions {
+      margin-top: var(--space-4);
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+    }
+
+    footer {
+      padding-block: var(--space-8);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    footer .grid {
+      align-items: center;
+    }
+
+    footer p {
+      grid-column: 1 / span 6;
+    }
+
+    footer span {
+      grid-column: 7 / span 6;
+      justify-self: end;
+    }
+
+    @media (max-width: 800px) {
+      .grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+      .brand {
+        grid-column: 1 / span 4;
+      }
+      .header-nav {
+        display: none;
+      }
+      .header-controls {
+        grid-column: 1 / span 4;
+        justify-self: start;
+        margin-top: var(--space-2);
+      }
+      .section-head {
+        grid-column: 1 / span 4;
+        margin-bottom: var(--space-3);
+      }
+      .section-body {
+        grid-column: 1 / span 4;
+      }
+      .list, .projects-grid {
+        grid-template-columns: 1fr;
+      }
+      footer p {
+        grid-column: 1 / span 4;
+      }
+      footer span {
+        grid-column: 1 / span 4;
+        justify-self: start;
+        margin-top: var(--space-2);
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link" data-i18n="skip">Zum Inhalt springen</a>
+
+  <div class="page">
+    <header>
+      <div class="grid header-inner">
+        <div class="brand">
+          <span>TOLGAY ÖZDEMIR</span>
+          <span data-i18n="brand_tagline">PROCUREMENT · EPROCUREMENT · WEB</span>
+        </div>
+        <nav class="header-nav" aria-label="Hauptnavigation">
+          <a href="#expertise" data-i18n="nav_expertise">Expertise</a>
+          <a href="#projects" data-i18n="nav_projects">Projekte</a>
+          <a href="#background" data-i18n="nav_background">Werdegang</a>
+          <a href="#contact" data-i18n="nav_contact">Kontakt</a>
+        </nav>
+        <div class="header-controls">
+          <button id="langToggle" class="btn-outline" aria-label="Sprache wechseln">EN</button>
+          <a class="btn-outline" href="https://github.com/TOezdemir" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section" id="hero">
+        <div class="grid">
+          <div class="section-head">
+            <span data-i18n="hero_label">Profil</span>
+          </div>
+          <div class="section-body">
+            <h1 class="hero-title" data-i18n="hero_title">PROCUREMENT · EPROCUREMENT · <em>WEB DEVELOPMENT</em></h1>
+            <p class="hero-text" data-i18n="hero_text">
+              Ich verbinde mehrjährige Erfahrung im strategischen Einkauf, Projektwissen aus der Implementierung von Ivalua
+              und praktisches Web Development. Mein Profil richtet sich an Rollen, in denen Prozessexpertise und digitale
+              Umsetzung zusammen gedacht werden.
+            </p>
+            <div class="hero-tags">
+              <span data-i18n="hero_tag1">Strategischer Einkauf</span>
+              <span data-i18n="hero_tag2">Ivalua Implementation</span>
+              <span data-i18n="hero_tag3">Technical Solution Consulting</span>
+              <span data-i18n="hero_tag4">React · TypeScript · Supabase</span>
+            </div>
+            <div class="hero-actions">
+              <a class="btn-accent" href="#projects" data-i18n="hero_cta_projects">Projekte ansehen</a>
+              <a class="btn-outline" href="mailto:tolgay.oezdemir@hsrw.org" data-i18n="hero_cta_contact">Kontakt aufnehmen</a>
+            </div>
+            <div class="hero-meta">
+              <dl>
+                <dt data-i18n="hero_meta1_label">Schwerpunkte</dt>
+                <dd data-i18n="hero_meta1_value">Einkaufsprozesse, eProcurement, Ivalua, Web UIs</dd>
+                <dt data-i18n="hero_meta2_label">Standort</dt>
+                <dd>Haltern am See, Deutschland</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="expertise">
+        <div class="grid">
+          <div class="section-head">
+            <span data-i18n="exp_label">Expertise</span>
+          </div>
+          <div class="section-body">
+            <div class="list">
+              <article class="list-item">
+                <h3 data-i18n="exp1_title">Strategischer Einkauf</h3>
+                <p data-i18n="exp1_text">
+                  Erfahrung als Strategischer Einkäufer / Lead Buyer mit Verantwortung für Projekte, Lieferanten
+                  und cross-funktionale Zusammenarbeit.
+                </p>
+                <div class="list-tags">
+                  <span data-i18n="exp1_tag1">Stakeholder-Management</span>
+                  <span data-i18n="exp1_tag2">Prozessdenken</span>
+                </div>
+              </article>
+              <article class="list-item">
+                <h3 data-i18n="exp2_title">Ivalua & eProcurement</h3>
+                <p data-i18n="exp2_text">
+                  Technical Solution Consultant in Implementierungsprojekten rund um Ivalua — von Anforderungsanalyse
+                  bis zur Nutzeradoption.
+                </p>
+                <div class="list-tags">
+                  <span>Ivalua</span>
+                  <span data-i18n="exp2_tag1">Solution Consulting</span>
+                </div>
+              </article>
+              <article class="list-item">
+                <h3 data-i18n="exp3_title">Web Development</h3>
+                <p data-i18n="exp3_text">
+                  Frontend-Fokus mit React und TypeScript, ergänzt durch Supabase und moderne Toolchains.
+                </p>
+                <div class="list-tags">
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>Supabase</span>
+                </div>
+              </article>
+              <article class="list-item">
+                <h3 data-i18n="exp4_title">Arbeitsweise</h3>
+                <p data-i18n="exp4_text">
+                  Strukturiert, dokumentationsstark und mit hoher Sensibilität für Prozesse, Stakeholder und
+                  reale Unternehmenskontexte.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="grid">
+          <div class="section-head">
+            <span data-i18n="proj_label">Projekte</span>
+          </div>
+          <div class="section-body">
+            <div class="projects-grid">
+              <article class="project">
+                <div class="project-meta" data-i18n="proj1_meta">Flagship · React · Supabase</div>
+                <h3>Recipe Book</h3>
+                <p data-i18n="proj1_text">
+                  Full-Stack-Rezepte-App mit React, TypeScript, Supabase und Tailwind CSS. Fokus auf Datenmodell,
+                  Suchfunktion, Kategorien und Automatisierung (GitHub Actions).
+                </p>
+                <div class="project-links">
+                  <a class="btn-outline" href="https://github.com/TOezdemir/project-recipebook" target="_blank" rel="noopener noreferrer">Repository</a>
+                </div>
+              </article>
+              <article class="project">
+                <div class="project-meta" data-i18n="proj2_meta">UI · React</div>
+                <h3>Silent Moon</h3>
+                <p data-i18n="proj2_text">
+                  Meditations- & Wellness-App als Abschlussprojekt. Zeigt UI-Struktur, Komponentenaufbau und State-Management.
+                </p>
+                <div class="project-links">
+                  <a class="btn-outline" href="https://github.com/TOezdemir/Abschlussprojekt-Silent-Moon" target="_blank" rel="noopener noreferrer">Repository</a>
+                </div>
+              </article>
+              <article class="project">
+                <div class="project-meta" data-i18n="proj3_meta">API · React</div>
+                <h3>Wetter App</h3>
+                <p data-i18n="proj3_text">
+                  Echtzeit-Wetteranwendung mit externer API — trainiert das Arbeiten mit Daten, Zuständen und UI.
+                </p>
+                <div class="project-links">
+                  <a class="btn-outline" href="https://github.com/TOezdemir/project-weather-app" target="_blank" rel="noopener noreferrer">Repository</a>
+                </div>
+              </article>
+              <article class="project">
+                <div class="project-meta" data-i18n="proj4_meta">API · React</div>
+                <h3>PokéAPI App</h3>
+                <p data-i18n="proj4_text">
+                  Experimente mit einer externen REST-API und User Interfaces rund um Datenlisten.
+                </p>
+                <div class="project-links">
+                  <a class="btn-outline" href="https://github.com/TOezdemir/project-pokeapi" target="_blank" rel="noopener noreferrer">Repository</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="background">
+        <div class="grid">
+          <div class="section-head">
+            <span data-i18n="bg_label">Werdegang</span>
+          </div>
+          <div class="section-body">
+            <div class="timeline">
+              <article class="timeline-item">
+                <small>2025</small>
+                <h3>Technical Solution Consultant</h3>
+                <p data-i18n="bg1_text">
+                  Implementierungsunterstützung für Ivalua eProcurement-Lösungen: Anforderungsanalyse,
+                  Systemkonfiguration, Begleitung von Kundenteams.
+                </p>
+              </article>
+              <article class="timeline-item">
+                <small>2024</small>
+                <h3>Web Development Bootcamp</h3>
+                <p data-i18n="bg2_text">
+                  SuperCode GmbH: TypeScript, React, Node.js, PostgreSQL, HTML, CSS, Tailwind.
+                </p>
+              </article>
+              <article class="timeline-item">
+                <small>2021–2024</small>
+                <h3>Strategischer Einkäufer / Lead Buyer</h3>
+                <p data-i18n="bg3_text">
+                  Verantwortung für Einkaufsprojekte, Lieferantenverhandlungen und cross-funktionale Zusammenarbeit.
+                </p>
+              </article>
+              <article class="timeline-item">
+                <small>2019–2021</small>
+                <h3>Strategischer Projekteinkäufer</h3>
+                <p data-i18n="bg4_text">
+                  Fokus auf projektorientierte Beschaffung, Lieferantenmanagement und strukturierte Prozesse.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="grid">
+          <div class="section-head">
+            <span data-i18n="contact_label">Kontakt</span>
+          </div>
+          <div class="section-body">
+            <p data-i18n="contact_text">
+              Offen für Rollen, in denen Einkauf, eProcurement und Web Development gemeinsam gedacht werden —
+              z.B. Technical Solution Consulting, eProcurement-Einführung oder Schnittstellenrollen zwischen Fachbereich
+              und IT.
+            </p>
+            <div class="contact-actions">
+              <a class="btn-accent" href="mailto:tolgay.oezdemir@hsrw.org" data-i18n="contact_email">E-Mail schreiben</a>
+              <a class="btn-outline" href="https://www.linkedin.com/in/tolgay-oezdemir" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a class="btn-outline" href="https://github.com/TOezdemir" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="grid">
+        <p>© <span id="year"></span> Tolgay Özdemir</p>
+        <span data-i18n="footer_loc">Haltern am See · Deutschland</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function() {
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const translations = {
+        de: {
+          skip: "Zum Inhalt springen",
+          brand_tagline: "PROCUREMENT · EPROCUREMENT · WEB",
+          nav_expertise: "Expertise",
+          nav_projects: "Projekte",
+          nav_background: "Werdegang",
+          nav_contact: "Kontakt",
+          hero_label: "Profil",
+          hero_title: "PROCUREMENT · EPROCUREMENT · <em>WEB DEVELOPMENT</em>",
+          hero_text: "Ich verbinde strategischen Einkauf, Ivalua-Implementierung und modernes Web Development. So unterstütze ich Teams, Einkaufsprozesse und digitale Lösungen gemeinsam zu denken und umzusetzen.",
+          hero_tag1: "Strategischer Einkauf",
+          hero_tag2: "Ivalua Implementierung",
+          hero_tag3: "Technical Solution Consulting",
+          hero_tag4: "React · TypeScript · Supabase",
+          hero_cta_projects: "Projekte ansehen",
+          hero_cta_contact: "Kontakt aufnehmen",
+          hero_meta1_label: "Schwerpunkte",
+          hero_meta1_value: "Einkaufsprozesse, eProcurement, Ivalua, Web UIs",
+          hero_meta2_label: "Standort",
+          exp_label: "Expertise",
+          exp1_title: "Strategischer Einkauf",
+          exp1_text: "Erfahrung als Strategischer Einkäufer / Lead Buyer mit Verantwortung für Projekte, Lieferanten und cross-funktionale Zusammenarbeit.",
+          exp1_tag1: "Stakeholder-Management",
+          exp1_tag2: "Prozessdenken",
+          exp2_title: "Ivalua & eProcurement",
+          exp2_text: "Technical Solution Consultant in Implementierungsprojekten rund um Ivalua — von Anforderungsanalyse bis zur Nutzeradoption.",
+          exp2_tag1: "Solution Consulting",
+          exp3_title: "Web Development",
+          exp3_text: "Frontend-Fokus mit React und TypeScript, ergänzt durch Supabase und moderne Toolchains.",
+          exp4_title: "Arbeitsweise",
+          exp4_text: "Strukturiert, dokumentationsstark und mit hoher Sensibilität für Prozesse, Stakeholder und reale Unternehmenskontexte.",
+          proj_label: "Projekte",
+          proj1_meta: "Flagship · React · Supabase",
+          proj1_text: "Full-Stack-Rezepte-App mit React, TypeScript, Supabase und Tailwind CSS. Fokus auf Datenmodell, Suchfunktion, Kategorien und Automatisierung (GitHub Actions).",
+          proj2_meta: "UI · React",
+          proj2_text: "Meditations- & Wellness-App als Abschlussprojekt. Zeigt UI-Struktur, Komponentenaufbau und State-Management.",
+          proj3_meta: "API · React",
+          proj3_text: "Echtzeit-Wetteranwendung mit externer API — trainiert das Arbeiten mit Daten, Zuständen und UI.",
+          proj4_meta: "API · React",
+          proj4_text: "Experimente mit einer externen REST-API und User Interfaces rund um Datenlisten.",
+          bg_label: "Werdegang",
+          bg1_text: "Implementierungsunterstützung für Ivalua eProcurement-Lösungen: Anforderungsanalyse, Systemkonfiguration, Begleitung von Kundenteams.",
+          bg2_text: "SuperCode GmbH: TypeScript, React, Node.js, PostgreSQL, HTML, CSS, Tailwind.",
+          bg3_text: "Verantwortung für Einkaufsprojekte, Lieferantenverhandlungen und cross-funktionale Zusammenarbeit.",
+          bg4_text: "Fokus auf projektorientierte Beschaffung, Lieferantenmanagement und strukturierte Prozesse.",
+          contact_label: "Kontakt",
+          contact_text: "Offen für Rollen, in denen Einkauf, eProcurement und Web Development gemeinsam gedacht werden — z.B. Technical Solution Consulting, eProcurement-Einführung oder Schnittstellenrollen zwischen Fachbereich und IT.",
+          contact_email: "E-Mail schreiben",
+          footer_loc: "Haltern am See · Deutschland"
+        },
+        en: {
+          skip: "Skip to content",
+          brand_tagline: "PROCUREMENT · EPROCUREMENT · WEB",
+          nav_expertise: "Expertise",
+          nav_projects: "Projects",
+          nav_background: "Background",
+          nav_contact: "Contact",
+          hero_label: "Profile",
+          hero_title: "PROCUREMENT · EPROCUREMENT · <em>WEB DEVELOPMENT</em>",
+          hero_text: "I combine strategic procurement, Ivalua implementation experience and modern web development. This helps teams think and deliver procurement processes and digital solutions as one.",
+          hero_tag1: "Strategic procurement",
+          hero_tag2: "Ivalua implementation",
+          hero_tag3: "Technical Solution consulting",
+          hero_tag4: "React · TypeScript · Supabase",
+          hero_cta_projects: "View projects",
+          hero_cta_contact: "Get in touch",
+          hero_meta1_label: "Focus areas",
+          hero_meta1_value: "Procurement processes, eProcurement, Ivalua, web UIs",
+          hero_meta2_label: "Location",
+          exp_label: "Expertise",
+          exp1_title: "Strategic Procurement",
+          exp1_text: "Experience as strategic buyer / lead buyer, accountable for projects, suppliers and cross-functional collaboration.",
+          exp1_tag1: "Stakeholder management",
+          exp1_tag2: "Process thinking",
+          exp2_title: "Ivalua & eProcurement",
+          exp2_text: "Technical Solution Consultant in implementation projects around Ivalua — from requirements analysis to user adoption.",
+          exp2_tag1: "Solution consulting",
+          exp3_title: "Web Development",
+          exp3_text: "Frontend focus with React and TypeScript, complemented by Supabase and modern toolchains.",
+          exp4_title: "Way of working",
+          exp4_text: "Structured, documentation-focused and highly aware of processes, stakeholders and real-world company contexts.",
+          proj_label: "Projects",
+          proj1_meta: "Flagship · React · Supabase",
+          proj1_text: "Full-stack recipe app built with React, TypeScript, Supabase and Tailwind CSS. Focus on data model, search, categories and automation (GitHub Actions).",
+          proj2_meta: "UI · React",
+          proj2_text: "Meditation & wellness app as bootcamp capstone. Shows UI structure, components and state management.",
+          proj3_meta: "API · React",
+          proj3_text: "Real-time weather app using an external API — exercises working with data, state and UI.",
+          proj4_meta: "API · React",
+          proj4_text: "Experiments with an external REST API and user interfaces around data lists.",
+          bg_label: "Background",
+          bg1_text: "Implementation support for Ivalua eProcurement solutions: requirements analysis, system configuration, support for client teams.",
+          bg2_text: "SuperCode GmbH: TypeScript, React, Node.js, PostgreSQL, HTML, CSS, Tailwind.",
+          bg3_text: "Responsible for procurement projects, supplier negotiations and cross-functional collaboration.",
+          bg4_text: "Focus on project-based sourcing, supplier management and structured processes.",
+          contact_label: "Contact",
+          contact_text: "Open to roles where procurement, eProcurement and web development are combined — such as Technical Solution Consulting, eProcurement implementation or bridge roles between business and IT.",
+          contact_email: "Send an email",
+          footer_loc: "Haltern am See · Germany"
+        }
+      };
+
+      var currentLang = 'de';
+      var langToggle = document.getElementById('langToggle');
+
+      function applyTranslations() {
+        var t = translations[currentLang];
+        document.documentElement.lang = currentLang;
+        document.querySelectorAll('[data-i18n]').forEach(function(el) {
+          var key = el.getAttribute('data-i18n');
+          if (t[key]) {
+            el.innerHTML = t[key];
+          }
+        });
+        langToggle.textContent = currentLang === 'de' ? 'EN' : 'DE';
+        langToggle.setAttribute('aria-label', currentLang === 'de' ? 'Switch to English' : 'Zu Deutsch wechseln');
+      }
+
+      langToggle.addEventListener('click', function() {
+        currentLang = currentLang === 'de' ? 'en' : 'de';
+        applyTranslations();
+      });
+
+      applyTranslations();
+    })();
+  </script>
+</body>
+</html>
