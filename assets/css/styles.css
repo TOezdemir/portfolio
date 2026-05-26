@@ -290,6 +290,12 @@
     }
 
     .project-tags{
+      font-family: var(--font-mono);
+      margin-top: var(--space-2);
+      font-size: 0.75rem;
+      text-transform: italic;
+      display: flex;
+      flex-wrap: wrap;
       gap: var(--space-4);
     }
     .project h3 {
