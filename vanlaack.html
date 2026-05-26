@@ -2,19 +2,25 @@
 <html lang="de">
   <head>
     <meta charset="utf-8">
-    <title>Case Study – Solution Design Workshop (van Laack &amp; Partners)</title>
+    <title data-i18n="case_vanlaack_html_title">
+      Case Study – Solution Design Workshop (van Laack &amp; Partners)
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="styles-4.css">
   </head>
   <body>
-    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+    <a class="skip-link" href="#main" data-i18n="skip">
+      Zum Inhalt springen
+    </a>
 
     <div class="page">
       <header>
         <div class="header-inner grid">
           <div class="brand">
             <span>Portfolio</span>
-            <span>PROCUREMENT · EPROCUREMENT · WEB</span>
+            <span data-i18n="brand_tagline">
+              PROCUREMENT · EPROCUREMENT · WEB
+            </span>
           </div>
 
           <nav class="header-nav">
@@ -25,7 +31,16 @@
           </nav>
 
           <div class="header-controls">
-            <a class="btn-outline" href="/index.html">Zurück</a>
+            <button id="langToggle"
+                    class="btn-outline"
+                    type="button"
+                    aria-label="Switch language">
+              EN
+            </button>
+            <a class="btn-outline" href="/index.html">
+              ←
+              <span data-i18n="case_back">Zurück</span>
+            </a>
           </div>
         </div>
       </header>
@@ -34,10 +49,13 @@
         <section class="section">
           <div class="grid">
             <div class="section-head">
-              <span>Consulting Case</span>
+              <span data-i18n="case_label_consulting">
+                Consulting Case
+              </span>
             </div>
+
             <div class="section-body">
-              <section class="case" data-lang-scope>
+              <section class="case">
                 <header class="case-header">
                   <h1 data-i18n="case_vanlaack_title">
                     Solution Design Workshop – Digitalisierung des Sourcing-Prozesses
@@ -45,146 +63,72 @@
                   <p class="case-subtitle" data-i18n="case_vanlaack_subtitle">
                     van Laack &amp; Partners · eProcurement / S2P
                   </p>
-
-                  <div class="lang-switch">
-                    <button type="button"
-                            class="lang-btn is-active"
-                            data-lang-target="de">
-                      DE
-                    </button>
-                    <button type="button"
-                            class="lang-btn"
-                            data-lang-target="en">
-                      EN
-                    </button>
-                  </div>
                 </header>
 
-                <!-- Deutsch -->
-                <div class="case-lang case-lang--de" data-lang="de">
-                  <section class="case-section">
-                    <h2>Kontext</h2>
-                    <p>
-                      In diesem Case ging es um die Digitalisierung eines bestehenden
-                      Sourcing-Prozesses in einem mittelständischen Unternehmen
-                      aus der Bekleidungsbranche. Ziel war es, ein gemeinsames
-                      Zielbild für eine S2P-Lösung zu entwickeln und die Grundlage
-                      für ein Implementierungsprojekt zu schaffen.
-                    </p>
-                  </section>
+                <section class="case-section">
+                  <h2 data-i18n="case_vanlaack_context_heading">Kontext</h2>
+                  <p data-i18n="case_vanlaack_context">
+                    In diesem Case ging es um die Digitalisierung eines bestehenden
+                    Sourcing-Prozesses in einem mittelständischen Unternehmen
+                    aus der Bekleidungsbranche. Ziel war es, ein gemeinsames
+                    Zielbild für eine S2P-Lösung zu entwickeln und die Grundlage
+                    für ein Implementierungsprojekt zu schaffen.
+                  </p>
+                </section>
 
-                  <section class="case-section">
-                    <h2>Problem / Ausgangssituation</h2>
-                    <p>
-                      Der Sourcing-Prozess war durch Medienbrüche, manuelle Freigaben
-                      und fehlende Transparenz über Phasen wie Lieferantenauswahl,
-                      Vertragsmanagement, Bestellabwicklung und Rechnungsprüfung geprägt.
-                      Rollen und Verantwortlichkeiten waren nicht durchgängig dokumentiert,
-                      Performance-Monitoring fand nur punktuell statt.
-                    </p>
-                  </section>
+                <section class="case-section">
+                  <h2 data-i18n="case_vanlaack_problem_heading">
+                    Problem / Ausgangssituation
+                  </h2>
+                  <p data-i18n="case_vanlaack_problem">
+                    Der Sourcing-Prozess war durch Medienbrüche, manuelle Freigaben
+                    und fehlende Transparenz über Phasen wie Lieferantenauswahl,
+                    Vertragsmanagement, Bestellabwicklung und Rechnungsprüfung geprägt.
+                    Rollen und Verantwortlichkeiten waren nicht durchgängig dokumentiert,
+                    Performance-Monitoring fand nur punktuell statt.
+                  </p>
+                </section>
 
-                  <section class="case-section">
-                    <h2>Vorgehen</h2>
-                    <ul>
-                      <li>
-                        Strukturierung des Prozesses in Phasen:
-                        Supplier Selection, Contract Management &amp; Order Processing,
-                        Performance Monitoring, Goods Receipt &amp; Invoice Handling.
-                      </li>
-                      <li>
-                        Erarbeitung eines Fragenkatalogs zu Rollen (Management,
-                        Einkauf, Logistik, Finanzen), Entscheidungspunkten
-                        und typischen Szenarien.
-                      </li>
-                      <li>
-                        Visualisierung der Prozesskette – von Start- und Endpunkten
-                        über interne Stakeholder bis zu externen Partnern –
-                        als Basis für den Workshop.
-                      </li>
-                      <li>
-                        Moderation eines Solution-Design-Workshops mit Einkauf,
-                        Fachbereichen und Management: gemeinsame Durchsprache
-                        des Prozesses, Diskussion von Pain Points
-                        und Definition des Soll-Zustands.
-                      </li>
-                    </ul>
-                  </section>
+                <section class="case-section">
+                  <h2 data-i18n="case_vanlaack_approach_heading">Vorgehen</h2>
+                  <ul>
+                    <li data-i18n="case_vanlaack_approach_1">
+                      Strukturierung des Prozesses in Phasen:
+                      Supplier Selection, Contract Management &amp; Order Processing,
+                      Performance Monitoring, Goods Receipt &amp; Invoice Handling.
+                    </li>
+                    <li data-i18n="case_vanlaack_approach_2">
+                      Erarbeitung eines Fragenkatalogs zu Rollen (Management,
+                      Einkauf, Logistik, Finanzen), Entscheidungspunkten
+                      und typischen Szenarien.
+                    </li>
+                    <li data-i18n="case_vanlaack_approach_3">
+                      Visualisierung der Prozesskette – von Start- und Endpunkten
+                      über interne Stakeholder bis zu externen Partnern –
+                      als Basis für den Workshop.
+                    </li>
+                    <li data-i18n="case_vanlaack_approach_4">
+                      Moderation eines Solution-Design-Workshops mit Einkauf,
+                      Fachbereichen und Management: gemeinsame Durchsprache
+                      des Prozesses, Diskussion von Pain Points
+                      und Definition des Soll-Zustands.
+                    </li>
+                  </ul>
+                </section>
 
-                  <section class="case-section">
-                    <h2>Ergebnis / Nutzen</h2>
-                    <p>
-                      Ergebnis war ein abgestimmtes Zielbild für den Sourcing-Prozess
-                      mit klar definierten Phasen, Rollen und Entscheidungswegen.
-                      Die erarbeitete Prozessdarstellung diente als Grundlage
-                      für weitere eProcurement- und S2P-Initiativen und erleichterte
-                      spätere Gespräche mit Implementierungspartnern, weil Anforderungen
-                      und Prozesskontext bereits strukturiert vorlagen.
-                    </p>
-                  </section>
-                </div>
-
-                <!-- Englisch -->
-                <div class="case-lang case-lang--en" data-lang="en">
-                  <section class="case-section">
-                    <h2>Context</h2>
-                    <p>
-                      This case focused on digitising an existing sourcing process
-                      for a mid-sized apparel company. The goal was to develop
-                      a shared target picture for an S2P solution and to provide
-                      a solid foundation for a subsequent implementation project.
-                    </p>
-                  </section>
-
-                  <section class="case-section">
-                    <h2>Problem</h2>
-                    <p>
-                      The sourcing process suffered from media breaks, manual approvals
-                      and limited transparency across phases such as supplier selection,
-                      contract management, ordering and invoice handling. Roles and
-                      responsibilities were not fully documented, and performance
-                      monitoring only took place selectively.
-                    </p>
-                  </section>
-
-                  <section class="case-section">
-                    <h2>Approach</h2>
-                    <ul>
-                      <li>
-                        Structured the process into phases: Supplier Selection,
-                        Contract Management &amp; Order Processing, Performance Monitoring,
-                        Goods Receipt &amp; Invoice Handling.
-                      </li>
-                      <li>
-                        Developed a question catalogue covering roles (management,
-                        procurement, logistics, finance), decision points
-                        and typical scenarios.
-                      </li>
-                      <li>
-                        Visualised the end-to-end process, including internal
-                        stakeholders and external partners, as the basis
-                        for the workshop.
-                      </li>
-                      <li>
-                        Facilitated a solution design workshop with procurement,
-                        business stakeholders and management to walk through the
-                        process, discuss pain points and define the target state.
-                      </li>
-                    </ul>
-                  </section>
-
-                  <section class="case-section">
-                    <h2>Outcome</h2>
-                    <p>
-                      The result was an agreed target picture for the sourcing
-                      process with clearly defined phases, roles and decision paths.
-                      The process visualisation became a reference for future
-                      eProcurement and S2P initiatives and made discussions with
-                      implementation partners more efficient because requirements
-                      and process context had already been structured.
-                    </p>
-                  </section>
-                </div>
+                <section class="case-section">
+                  <h2 data-i18n="case_vanlaack_result_heading">
+                    Ergebnis / Nutzen
+                  </h2>
+                  <p data-i18n="case_vanlaack_result">
+                    Ergebnis war ein abgestimmtes Zielbild für den Sourcing-Prozess
+                    mit klar definierten Phasen, Rollen und Entscheidungswegen.
+                    Die erarbeitete Prozessdarstellung diente als Grundlage
+                    für weitere eProcurement- und S2P-Initiativen und erleichterte
+                    spätere Gespräche mit Implementierungspartnern, weil Anforderungen
+                    und Prozesskontext bereits strukturiert vorlagen.
+                  </p>
+                </section>
               </section>
             </div>
           </div>
@@ -193,10 +137,10 @@
 
       <footer class="grid">
         <p>&copy; <span id="year"></span> Tolga Özdemir</p>
-        <span>Haltern am See · Deutschland</span>
+        <span data-i18n="footer_loc">Haltern am See · Deutschland</span>
       </footer>
     </div>
 
-    <script src="assets/js/main.js"></script>
+    <script src="main-5.js"></script>
   </body>
 </html>

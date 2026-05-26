@@ -2,19 +2,25 @@
 <html lang="de">
   <head>
     <meta charset="utf-8">
-    <title>Case Study – Requirements Engineering im eProcurement (Parasus)</title>
+    <title data-i18n="case_parasus_html_title">
+      Case Study – Requirements Engineering im eProcurement (Parasus)
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="styles-4.css">
   </head>
   <body>
-    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+    <a class="skip-link" href="#main" data-i18n="skip">
+      Zum Inhalt springen
+    </a>
 
     <div class="page">
       <header>
         <div class="header-inner grid">
           <div class="brand">
             <span>Portfolio</span>
-            <span>PROCUREMENT · EPROCUREMENT · WEB</span>
+            <span data-i18n="brand_tagline">
+              PROCUREMENT · EPROCUREMENT · WEB
+            </span>
           </div>
 
           <nav class="header-nav">
@@ -25,7 +31,16 @@
           </nav>
 
           <div class="header-controls">
-            <a class="btn-outline" href="/index.html">Zurück</a>
+            <button id="langToggle"
+                    class="btn-outline"
+                    type="button"
+                    aria-label="Switch language">
+              EN
+            </button>
+            <a class="btn-outline" href="/index.html">
+              ←
+              <span data-i18n="case_back">Zurück</span>
+            </a>
           </div>
         </div>
       </header>
@@ -34,10 +49,13 @@
         <section class="section">
           <div class="grid">
             <div class="section-head">
-              <span>Consulting Case</span>
+              <span data-i18n="case_label_consulting">
+                Consulting Case
+              </span>
             </div>
+
             <div class="section-body">
-              <section class="case" data-lang-scope>
+              <section class="case">
                 <header class="case-header">
                   <h1 data-i18n="case_parasus_title">
                     Requirements Engineering im eProcurement
@@ -45,155 +63,77 @@
                   <p class="case-subtitle" data-i18n="case_parasus_subtitle">
                     Parasus · S2P / eProcurement
                   </p>
-
-                  <div class="lang-switch">
-                    <button type="button"
-                            class="lang-btn is-active"
-                            data-lang-target="de">
-                      DE
-                    </button>
-                    <button type="button"
-                            class="lang-btn"
-                            data-lang-target="en">
-                      EN
-                    </button>
-                  </div>
                 </header>
 
-                <!-- Deutsch -->
-                <div class="case-lang case-lang--de" data-lang="de">
-                  <section class="case-section">
-                    <h2>Kontext</h2>
-                    <p>
-                      In diesem Case lag der Fokus auf Requirements Engineering
-                      für eine eProcurement- bzw. S2P-Lösung. Gemeinsam mit einem
-                      Beratungshaus (Parasus) sollte eine strukturierte
-                      Anforderungsbasis geschaffen werden, die Business-Anforderungen,
-                      Soll-Prozesse und Functional Design verbindet.
-                    </p>
-                  </section>
+                <section class="case-section">
+                  <h2 data-i18n="case_parasus_context_heading">Kontext</h2>
+                  <p data-i18n="case_parasus_context">
+                    In diesem Case lag der Fokus auf Requirements Engineering
+                    für eine eProcurement- bzw. S2P-Lösung. Gemeinsam mit einem
+                    Beratungshaus (Parasus) sollte eine strukturierte
+                    Anforderungsbasis geschaffen werden, die Business-Anforderungen,
+                    Soll-Prozesse und Functional Design verbindet.
+                  </p>
+                </section>
 
-                  <section class="case-section">
-                    <h2>Problem / Ausgangssituation</h2>
-                    <p>
-                      Es lagen viele verteilte Informationen vor:
-                      Stakeholder-Listen, IST-Prozessmodelle mit Pain Points,
-                      einzelne Business-Requirements und Vorstellungen
-                      zu Soll-Prozessen. Diese Artefakte waren nicht konsolidiert,
-                      und es fehlte eine durchgängige Sicht von der Anforderung
-                      bis zum Design.
-                    </p>
-                  </section>
+                <section class="case-section">
+                  <h2 data-i18n="case_parasus_problem_heading">
+                    Problem / Ausgangssituation
+                  </h2>
+                  <p data-i18n="case_parasus_problem">
+                    Es lagen viele verteilte Informationen vor:
+                    Stakeholder-Listen, IST-Prozessmodelle mit Pain Points,
+                    einzelne Business-Requirements und Vorstellungen
+                    zu Soll-Prozessen. Diese Artefakte waren nicht konsolidiert,
+                    und es fehlte eine durchgängige Sicht von der Anforderung
+                    bis zum Design.
+                  </p>
+                </section>
 
-                  <section class="case-section">
-                    <h2>Vorgehen</h2>
-                    <ul>
-                      <li>
-                        Konsolidation bestehender Artefakte: Stakeholder-Liste
-                        (z.B. als RACI), IST-Prozessmodelle, Pain Points,
-                        Business-Requirement-Liste, Soll-Prozessdiagramme,
-                        Business Rules und FDD-Entwürfe.
-                      </li>
-                      <li>
-                        Gemeinsame Workshops mit Business und IT statt
-                        „Dokument-Pingpong“: Use-Cases live durchgehen,
-                        Walkthroughs der Business-Szenarien und Visualisierung
-                        der Prozesse.
-                      </li>
-                      <li>
-                        Ableitung eines Functional Design Documents (FDD)
-                        mit Prozessbeschreibungen, UI-Entwürfen,
-                        Feld- und Validierungslogik, Rollen und Berechtigungen
-                        sowie Integrations- und Datenflüssen.
-                      </li>
-                      <li>
-                        Beratung zu Prozessverbesserungen im P2P-Flow,
-                        Standardisierung von Daten und Prozessen und Umgang
-                        mit nicht oder nur teilweise umsetzbaren Anforderungen
-                        (Alternativen, Risikoabwägung).
-                      </li>
-                    </ul>
-                  </section>
+                <section class="case-section">
+                  <h2 data-i18n="case_parasus_approach_heading">Vorgehen</h2>
+                  <ul>
+                    <li data-i18n="case_parasus_approach_1">
+                      Konsolidation bestehender Artefakte: Stakeholder-Liste
+                      (z.B. als RACI), IST-Prozessmodelle, Pain Points,
+                      Business-Requirement-Liste, Soll-Prozessdiagramme,
+                      Business Rules und FDD-Entwürfe.
+                    </li>
+                    <li data-i18n="case_parasus_approach_2">
+                      Gemeinsame Workshops mit Business und IT statt
+                      „Dokument-Pingpong“: Use-Cases live durchgehen,
+                      Walkthroughs der Business-Szenarien und Visualisierung
+                      der Prozesse.
+                    </li>
+                    <li data-i18n="case_parasus_approach_3">
+                      Ableitung eines Functional Design Documents (FDD)
+                      mit Prozessbeschreibungen, UI-Entwürfen,
+                      Feld- und Validierungslogik, Rollen und Berechtigungen
+                      sowie Integrations- und Datenflüssen.
+                    </li>
+                    <li data-i18n="case_parasus_approach_4">
+                      Beratung zu Prozessverbesserungen im P2P-Flow,
+                      Standardisierung von Daten und Prozessen und Umgang
+                      mit nicht oder nur teilweise umsetzbaren Anforderungen
+                      (Alternativen, Risikoabwägung).
+                    </li>
+                  </ul>
+                </section>
 
-                  <section class="case-section">
-                    <h2>Ergebnis / Nutzen</h2>
-                    <p>
-                      Das Ergebnis war eine konsolidierte, nachvollziehbare
-                      Anforderungsbasis: Business-Requirements, Soll-Prozesse
-                      und FDD standen in einer klaren Traceability zueinander.
-                      Dadurch konnten Implementierungsteams zielgerichteter
-                      arbeiten, Änderungswünsche besser bewertet werden
-                      und Entscheidungen zu Standard versus Customizing
-                      transparent dokumentiert werden.
-                    </p>
-                  </section>
-                </div>
-
-                <!-- Englisch -->
-                <div class="case-lang case-lang--en" data-lang="en">
-                  <section class="case-section">
-                    <h2>Context</h2>
-                    <p>
-                      This case focused on requirements engineering for an
-                      eProcurement or S2P solution. Together with a consulting
-                      partner (Parasus), the aim was to create a structured
-                      requirements baseline that links business requirements,
-                      target processes and functional design.
-                    </p>
-                  </section>
-
-                  <section class="case-section">
-                    <h2>Problem</h2>
-                    <p>
-                      A variety of artefacts existed in parallel: stakeholder
-                      lists, AS-IS process models with pain points, individual
-                      business requirements and ideas for TO-BE processes.
-                      These artefacts were not consolidated, and there was no
-                      end-to-end view from requirement to functional design.
-                    </p>
-                  </section>
-
-                  <section class="case-section">
-                    <h2>Approach</h2>
-                    <ul>
-                      <li>
-                        Consolidated existing artefacts such as stakeholder lists
-                        (e.g. as RACI), AS-IS process models, pain points,
-                        business requirement lists, TO-BE process diagrams,
-                        business rules and initial FDD drafts.
-                      </li>
-                      <li>
-                        Ran joint workshops with business and IT instead of
-                        document ping-pong: walked through use cases live and
-                        visualised business scenarios and processes.
-                      </li>
-                      <li>
-                        Derived a Functional Design Document (FDD) covering
-                        process descriptions, UI sketches, field and validation
-                        logic, roles and authorisations, as well as integrations
-                        and data flows.
-                      </li>
-                      <li>
-                        Advised on process improvements along the P2P flow,
-                        standardisation of data and processes and how to deal
-                        with partially or non-feasible requirements
-                        (alternatives, risk assessment).
-                      </li>
-                    </ul>
-                  </section>
-
-                  <section class="case-section">
-                    <h2>Outcome</h2>
-                    <p>
-                      The result was a consolidated and traceable requirements
-                      baseline: business requirements, TO-BE processes and the
-                      FDD were clearly linked to each other. This enabled
-                      implementation teams to work more efficiently, evaluate
-                      change requests more consistently and document decisions
-                      on standard versus customising in a transparent way.
-                    </p>
-                  </section>
-                </div>
+                <section class="case-section">
+                  <h2 data-i18n="case_parasus_result_heading">
+                    Ergebnis / Nutzen
+                  </h2>
+                  <p data-i18n="case_parasus_result">
+                    Das Ergebnis war eine konsolidierte, nachvollziehbare
+                    Anforderungsbasis: Business-Requirements, Soll-Prozesse
+                    und FDD standen in einer klaren Traceability zueinander.
+                    Dadurch konnten Implementierungsteams zielgerichteter
+                    arbeiten, Änderungswünsche besser bewertet werden
+                    und Entscheidungen zu Standard versus Customizing
+                    transparent dokumentiert werden.
+                  </p>
+                </section>
               </section>
             </div>
           </div>
@@ -202,10 +142,10 @@
 
       <footer class="grid">
         <p>&copy; <span id="year"></span> Tolga Özdemir</p>
-        <span>Haltern am See · Deutschland</span>
+        <span data-i18n="footer_loc">Haltern am See · Deutschland</span>
       </footer>
     </div>
 
-    <script src="assets/js/main.js"></script>
+    <script src="main-5.js"></script>
   </body>
 </html>

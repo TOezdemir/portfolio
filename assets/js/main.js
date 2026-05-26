@@ -65,6 +65,36 @@
           case_vanlaack_subtitle: "van Laack & Partners · eProcurement / S2P",
           case_parasus_title: "Requirements Engineering im eProcurement",
           case_parasus_subtitle: "Parasus · S2P / eProcurement",
+          case_back: "Zurück",
+          case_label_consulting: "Consulting Case",
+          case_vanlaack_html_title: "Case Study – Solution Design Workshop (van Laack & Partners)",
+          case_vanlaack_title: "Solution Design Workshop – Digitalisierung des Sourcing-Prozesses",
+          case_vanlaack_subtitle: "van Laack & Partners · eProcurement / S2P",
+          case_vanlaack_context_heading: "Kontext",
+          case_vanlaack_context: "In diesem Case ging es um die Digitalisierung eines bestehenden Sourcing-Prozesses in einem mittelständischen Unternehmen aus der Bekleidungsbranche. Ziel war es, ein gemeinsames Zielbild für eine S2P-Lösung zu entwickeln und die Grundlage für ein Implementierungsprojekt zu schaffen.",
+          case_vanlaack_problem_heading: "Problem / Ausgangssituation",
+          case_vanlaack_problem: "Der Sourcing-Prozess war durch Medienbrüche, manuelle Freigaben und fehlende Transparenz über Phasen wie Lieferantenauswahl, Vertragsmanagement, Bestellabwicklung und Rechnungsprüfung geprägt. Rollen und Verantwortlichkeiten waren nicht durchgängig dokumentiert, Performance-Monitoring fand nur punktuell statt.",
+          case_vanlaack_approach_heading: "Vorgehen",
+          case_vanlaack_approach_1: "Strukturierung des Prozesses in Phasen: Supplier Selection, Contract Management & Order Processing, Performance Monitoring, Goods Receipt & Invoice Handling.",
+          case_vanlaack_approach_2: "Erarbeitung eines Fragenkatalogs zu Rollen (Management, Einkauf, Logistik, Finanzen), Entscheidungspunkten und typischen Szenarien.",
+          case_vanlaack_approach_3: "Visualisierung der Prozesskette – von Start- und Endpunkten über interne Stakeholder bis zu externen Partnern – als Basis für den Workshop.",
+          case_vanlaack_approach_4: "Moderation eines Solution-Design-Workshops mit Einkauf, Fachbereichen und Management: gemeinsame Durchsprache des Prozesses, Diskussion von Pain Points und Definition des Soll-Zustands.",
+          case_vanlaack_result_heading: "Ergebnis / Nutzen",
+          case_vanlaack_result: "Ergebnis war ein abgestimmtes Zielbild für den Sourcing-Prozess mit klar definierten Phasen, Rollen und Entscheidungswegen. Die erarbeitete Prozessdarstellung diente als Grundlage für weitere eProcurement- und S2P-Initiativen und erleichterte spätere Gespräche mit Implementierungspartnern, weil Anforderungen und Prozesskontext bereits strukturiert vorlagen.",
+          case_parasus_html_title: "Case Study – Requirements Engineering im eProcurement (Parasus)",
+          case_parasus_title: "Requirements Engineering im eProcurement",
+          case_parasus_subtitle: "Parasus · S2P / eProcurement",
+          case_parasus_context_heading: "Kontext",
+          case_parasus_context: "In diesem Case lag der Fokus auf Requirements Engineering für eine eProcurement- bzw. S2P-Lösung. Gemeinsam mit einem Beratungshaus (Parasus) sollte eine strukturierte Anforderungsbasis geschaffen werden, die Business-Anforderungen, Soll-Prozesse und Functional Design verbindet.",
+          case_parasus_problem_heading: "Problem / Ausgangssituation",
+          case_parasus_problem: "Es lagen viele verteilte Informationen vor: Stakeholder-Listen, IST-Prozessmodelle mit Pain Points, einzelne Business-Requirements und Vorstellungen zu Soll-Prozessen. Diese Artefakte waren nicht konsolidiert, und es fehlte eine durchgängige Sicht von der Anforderung bis zum Design.",
+          case_parasus_approach_heading: "Vorgehen",
+          case_parasus_approach_1: "Konsolidation bestehender Artefakte: Stakeholder-Liste (z.B. als RACI), IST-Prozessmodelle, Pain Points, Business-Requirement-Liste, Soll-Prozessdiagramme, Business Rules und FDD-Entwürfe.",
+          case_parasus_approach_2: "Gemeinsame Workshops mit Business und IT statt „Dokument-Pingpong“: Use-Cases live durchgehen, Walkthroughs der Business-Szenarien und Visualisierung der Prozesse.",
+          case_parasus_approach_3: "Ableitung eines Functional Design Documents (FDD) mit Prozessbeschreibungen, UI-Entwürfen, Feld- und Validierungslogik, Rollen und Berechtigungen sowie Integrations- und Datenflüssen.",
+          case_parasus_approach_4: "Beratung zu Prozessverbesserungen im P2P-Flow, Standardisierung von Daten und Prozessen und Umgang mit nicht oder nur teilweise umsetzbaren Anforderungen (Alternativen, Risikoabwägung).",
+          case_parasus_result_heading: "Ergebnis / Nutzen",
+          case_parasus_result: "Das Ergebnis war eine konsolidierte, nachvollziehbare Anforderungsbasis: Business-Requirements, Soll-Prozesse und FDD standen in einer klaren Traceability zueinander. Dadurch konnten Implementierungsteams zielgerichteter arbeiten, Änderungswünsche besser bewertet werden und Entscheidungen zu Standard versus Customizing transparent dokumentiert werden.",
           
         },
         en: {
@@ -130,6 +160,36 @@
           case_vanlaack_subtitle: "van Laack & Partners · eProcurement / S2P",
           case_parasus_title: "Requirements engineering in eProcurement",
           case_parasus_subtitle: "Parasus · S2P / eProcurement",
+          case_back: "Back",
+          case_label_consulting: "Consulting case",
+          case_vanlaack_html_title: "Case study – solution design workshop (van Laack & Partners)",
+          case_vanlaack_title: "Solution design workshop – digitising the sourcing process",
+          case_vanlaack_subtitle: "van Laack & Partners · eProcurement / S2P",
+          case_vanlaack_context_heading: "Context",
+          case_vanlaack_context: "This case focused on digitising an existing sourcing process for a mid-sized apparel company. The goal was to develop a shared target picture for an S2P solution and to provide a solid foundation for a subsequent implementation project.",
+          case_vanlaack_problem_heading: "Problem",
+          case_vanlaack_problem: "The sourcing process suffered from media breaks, manual approvals and limited transparency across phases such as supplier selection, contract management, ordering and invoice handling. Roles and responsibilities were not fully documented and performance monitoring only took place selectively.",
+          case_vanlaack_approach_heading: "Approach",
+          case_vanlaack_approach_1: "Structured the process into phases: supplier selection, contract management & order processing, performance monitoring, goods receipt & invoice handling.",
+          case_vanlaack_approach_2: "Developed a question catalogue covering roles (management, procurement, logistics, finance), decision points and typical scenarios.",
+          case_vanlaack_approach_3: "Visualised the end-to-end process, including internal stakeholders and external partners, as the basis for the workshop.",
+          case_vanlaack_approach_4: "Facilitated a solution design workshop with procurement, business stakeholders and management to walk through the process, discuss pain points and define the target state.",
+          case_vanlaack_result_heading: "Outcome",
+          case_vanlaack_result:"The result was an agreed target picture for the sourcing process with clearly defined phases, roles and decision paths. The process visualisation became a reference for future eProcurement and S2P initiatives and made discussions with implementation partners more efficient because requirements and process context had already been structured.",
+          case_parasus_html_title:"Case study – requirements engineering in eProcurement (Parasus)",
+          case_parasus_title:"Requirements engineering in eProcurement",
+          case_parasus_subtitle:"Parasus · S2P / eProcurement",
+          case_parasus_context_heading: "Context",
+          case_parasus_context:"This case focused on requirements engineering for an eProcurement or S2P solution. Together with a consulting partner (Parasus), the aim was to create a structured requirements baseline that links business requirements, target processes and functional design.",
+          case_parasus_problem_heading: "Problem",
+          case_parasus_problem:"A variety of artefacts existed in parallel: stakeholder lists, AS-IS process models with pain points, individual business requirements and ideas for TO-BE processes. These artefacts were not consolidated, and there was no end-to-end view from requirement to functional design.",
+          case_parasus_approach_heading: "Approach",
+          case_parasus_approach_1:"Consolidated existing artefacts such as stakeholder lists (e.g. as RACI), AS-IS process models, pain points, business requirement lists, TO-BE process diagrams, business rules and initial FDD drafts.",
+          case_parasus_approach_2:"Ran joint workshops with business and IT instead of document ping-pong: walked through use cases live and visualised business scenarios and processes.",
+          case_parasus_approach_3:"Derived a functional design document (FDD) covering process descriptions, UI sketches, field and validation logic, roles and authorisations, as well as integrations and data flows.",
+          case_parasus_approach_4:"Advised on process improvements along the P2P flow, standardisation of data and processes and how to deal with partially or non-feasible requirements (alternatives, risk assessment).",
+          case_parasus_result_heading: "Outcome",
+          case_parasus_result:"The result was a consolidated and traceable requirements baseline: business requirements, TO-BE processes and the FDD were clearly linked to each other. This enabled implementation teams to work more efficiently, evaluate change requests more consistently and document decisions on standard versus customising in a transparent way.",
         }
       };
 
@@ -162,37 +222,4 @@
   }
 
   applyTranslations();
-
-  // ── Case-specific language switch (parasus / vanlaack) ──
-  document.addEventListener("DOMContentLoaded", () => {
-    const langScopes = document.querySelectorAll("[data-lang-scope]");
-
-    langScopes.forEach(scope => {
-      const buttons = scope.querySelectorAll(".lang-btn");
-      const langBlocks = scope.querySelectorAll("[data-lang]");
-
-      // Default: DE anzeigen, EN verstecken
-      langBlocks.forEach(block => {
-        const lang = block.getAttribute("data-lang");
-        block.style.display = lang === "de" ? "block" : "none";
-      });
-
-      buttons.forEach(btn => {
-        btn.addEventListener("click", () => {
-          const targetLang = btn.getAttribute("data-lang-target");
-
-          // Button-Zustände
-          buttons.forEach(b =>
-            b.classList.toggle("is-active", b === btn)
-          );
-
-          // Sprach-Blöcke ein-/ausblenden
-          langBlocks.forEach(block => {
-            const lang = block.getAttribute("data-lang");
-            block.style.display = lang === targetLang ? "block" : "none";
-          });
-        });
-      });
-    });
-  });
 })();
