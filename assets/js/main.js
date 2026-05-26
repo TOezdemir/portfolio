@@ -54,7 +54,11 @@
           contact_label: "Kontakt",
           contact_text: "Offen für Rollen, in denen Einkauf, eProcurement und Web Development gemeinsam gedacht werden — z.B. Technical Solution Consulting, eProcurement-Einführung oder Schnittstellenrollen zwischen Fachbereich und IT.",
           contact_email: "E-Mail schreiben",
-          footer_loc: "Haltern am See · Deutschland"
+          footer_loc: "Haltern am See · Deutschland",
+          consult_vanlaack_title: "Solution Design Workshop",
+          consult_vanlaack_text: "Vorbereitung und Durchführung eines Solution-Design-Workshops für die Digitalisierung des Sourcing-Prozesses: Analyse des Ist-Prozesses, Definition des Zielbildes und Erstellung eines Prozessdiagramms.",
+          consult_parasus_title: "Requirements Engineering im eProcurement",
+          consult_parasus_text: "Anforderungsaufnahme und Beratung im eProcurement-Kontext: Stakeholderanalyse, Workshops entlang der P2P-Prozesskette und Ableitung von Business-Requirements in ein Functional Design.",
         },
         en: {
           skip: "Skip to content",
@@ -108,7 +112,11 @@
           contact_label: "Contact",
           contact_text: "Open to roles where procurement, eProcurement and web development are combined — such as Technical Solution Consulting, eProcurement implementation or bridge roles between business and IT.",
           contact_email: "Send an email",
-          footer_loc: "Haltern am See · Germany"
+          footer_loc: "Haltern am See · Germany",
+          consult_vanlaack_title: "Solution Design Workshop",
+          consult_vanlaack_text: "Designed and facilitated a solution design workshop for sourcing digitalization: analyzed the current sourcing process, defined the target picture and created a process diagram for an S2P solution.",
+          consult_parasus_title: "Requirements Engineering in eProcurement",
+          consult_parasus_text: "Gathered and structured requirements in an eProcurement context: stakeholder analysis, workshops along the P2P process and translating business requirements into a functional design.",
         }
       };
 
