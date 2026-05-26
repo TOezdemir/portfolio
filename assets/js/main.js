@@ -61,6 +61,10 @@
           consult_parasus_text: "Anforderungsaufnahme und Beratung im eProcurement-Kontext: Stakeholderanalyse, Workshops entlang der P2P-Prozesskette und Ableitung von Business-Requirements in ein Functional Design.",
           consult_vanlaack_cta: "Mehr Details",
           consult_parasus_cta: "Mehr Details",
+          case_vanlaack_title: "Solution Design Workshop – Digitalisierung des Sourcing-Prozesses",
+          case_vanlaack_subtitle: "van Laack & Partners · eProcurement / S2P",
+          case_parasus_title: "Requirements Engineering im eProcurement",
+          case_parasus_subtitle: "Parasus · S2P / eProcurement",
           
         },
         en: {
@@ -122,6 +126,10 @@
           consult_parasus_text: "Gathered and structured requirements in an eProcurement context: stakeholder analysis, workshops along the P2P process and translating business requirements into a functional design.",
           consult_vanlaack_cta: "More details",
           consult_parasus_cta: "More details",
+          case_vanlaack_title: "Solution design workshop – digitising the sourcing process",
+          case_vanlaack_subtitle: "van Laack & Partners · eProcurement / S2P",
+          case_parasus_title: "Requirements engineering in eProcurement",
+          case_parasus_subtitle: "Parasus · S2P / eProcurement",
         }
       };
 
