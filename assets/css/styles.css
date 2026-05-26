@@ -266,14 +266,14 @@
       font-family: var(--font-mono);
       margin-top: var(--space-2);
       font-size: 0.75rem;
-      text-transform: uppercase;
+      text-transform: italic;
       display: flex;
       flex-wrap: wrap;
-      gap: var(--space-1);
+      gap: var(--space-4);
     }
 
     .list-tags span {
-      padding: 2px 6px;
+      padding: 0;
     }
 
     .projects-grid {
