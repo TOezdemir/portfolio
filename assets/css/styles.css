@@ -251,8 +251,6 @@
       gap: var(--space-4);
     }
 
-    .list-item {}
-
     .list-item h3 {
       text-transform: uppercase;
       letter-spacing: 0.06em;
@@ -327,8 +325,6 @@
       gap: var(--space-6);
       font-size: 0.875rem;
     }
-
-    .timeline-item {}
 
     .timeline-item small {
       display: block;
