@@ -1,7 +1,7 @@
 :root {
       --color-bg: #ffffff;
       --color-text: #000000;
-      --color-accent: #e53935;
+      --color-accent: #e53935; /* plakative Highlightfarbe */
       --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
       --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
       --space-1: 4px;
@@ -172,8 +172,6 @@
       grid-column: 4 / span 9;
     }
 
-    /* ── Hero ─────────────────────────────────────────── */
-
     .hero-block {
       max-width: 40rem;
     }
@@ -243,15 +241,15 @@
       margin: 0;
     }
 
-    /* ── Expertise ────────────────────────────────────── */
-
     .list {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: var(--space-4);
     }
 
-    .list-item {}
+    .list-item {
+      /* kein padding-top, bündig mit section-body */
+    }
 
     .list-item h3 {
       text-transform: uppercase;
@@ -268,6 +266,7 @@
       font-family: var(--font-mono);
       margin-top: var(--space-2);
       font-size: 0.75rem;
+      text-transform: italic;
       display: flex;
       flex-wrap: wrap;
       gap: var(--space-4);
@@ -278,19 +277,29 @@
       padding: 0;
     }
 
-    /* ── Projects ─────────────────────────────────────── */
-
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: var(--space-8);
+      gap: var(--space-4);
     }
 
     .project {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
+      min-height: 260px;
     }
 
+    .project-tags{
+      font-family: var(--font-mono);
+      margin-top: var(--space-2);
+      font-size: 0.75rem;
+      text-transform: italic;
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+      text-transform: capitalize;
+    }
     .project h3 {
       text-transform: uppercase;
       letter-spacing: 0.06em;
@@ -300,56 +309,46 @@
 
     .project p {
       font-size: 0.875rem;
-      flex-grow: 1;
-      margin-bottom: var(--space-3);
+      margin-bottom: var(--space-2);
     }
 
-    .project-tags {
-      font-family: var(--font-mono);
+    .project-meta {
       font-size: 0.75rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--space-3);
-      text-transform: capitalize;
-      margin-bottom: var(--space-3);
+      text-transform: uppercase;
+      margin-bottom: var(--space-2);
     }
 
     .project-links {
       display: flex;
       gap: var(--space-2);
       flex-wrap: wrap;
+      margin-top: auto;
     }
-
-    /* ── Timeline ─────────────────────────────────────── */
 
     .timeline {
       display: grid;
-      gap: var(--space-6);
+      gap: var(--space-3);
       font-size: 0.875rem;
     }
 
-    .timeline-item {}
+    .timeline-item {
+      /* kein padding-top, bündig mit section-body */
+    }
 
     .timeline-item small {
       display: block;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       font-size: 0.75rem;
-      margin-bottom: 2px;
     }
 
     .timeline-item h3 {
       font-size: 0.875rem;
       text-transform: uppercase;
       letter-spacing: 0.06em;
-      margin-bottom: var(--space-1);
+      margin-top: 2px;
+      margin-bottom: 2px;
     }
-
-    .timeline-item p {
-      font-size: 0.875rem;
-    }
-
-    /* ── Contact ──────────────────────────────────────── */
 
     .contact-actions {
       margin-top: var(--space-4);
@@ -357,8 +356,6 @@
       flex-wrap: wrap;
       gap: var(--space-3);
     }
-
-    /* ── Footer ───────────────────────────────────────── */
 
     footer {
       padding-block: var(--space-8);
@@ -379,8 +376,6 @@
       grid-column: 7 / span 6;
       justify-self: end;
     }
-
-    /* ── Mobile ───────────────────────────────────────── */
 
     @media (max-width: 800px) {
       .grid {
