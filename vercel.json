@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/public", "destination": "/vanlaack.html" },
+    { "source": "/public", "destination": "/parasus.html" }
+  ]
+}
