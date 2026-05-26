@@ -287,9 +287,11 @@
       flex-direction: column;
       justify-content: space-between;
       min-height: 260px;
-      padding-top: var(--space-3);
     }
 
+    .project-tags{
+      gap: var(--space-4);
+    }
     .project h3 {
       text-transform: uppercase;
       letter-spacing: 0.06em;
