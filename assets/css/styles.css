@@ -203,11 +203,11 @@
 
     .hero-tags {
       font-family: var(--font-mono);
+      font-weight: 500;
       display: flex;
       flex-wrap: wrap;
-      gap: var(--space-2);
+      gap: normal;
       font-size: 0.75rem;
-      text-transform: uppercase;
     }
 
     .hero-tags span {
@@ -260,16 +260,18 @@
 
     .list-item p {
       font-size: 0.875rem;
+      line-height: 170%;
     }
 
     .list-tags {
       font-family: var(--font-mono);
+      font-weight: 500;
       margin-top: var(--space-2);
       font-size: 0.75rem;
       display: flex;
       flex-wrap: wrap;
       gap: var(--space-4);
-      text-transform: capitalize;
+  
     }
 
     .list-tags span {
@@ -300,15 +302,16 @@
       font-size: 0.875rem;
       flex-grow: 1;
       margin-bottom: var(--space-3);
+      line-height: 170%;
     }
 
     .project-tags {
       font-family: var(--font-mono);
+      font-weight: 500;
       font-size: 0.75rem;
       display: flex;
       flex-wrap: wrap;
       gap: var(--space-3);
-      text-transform: capitalize;
       margin-bottom: var(--space-3);
     }
 
@@ -331,6 +334,7 @@
       text-transform: uppercase;
       letter-spacing: 0.08em;
       font-size: 0.75rem;
+      line-height: 170%;
       margin-bottom: 2px;
     }
 
@@ -343,7 +347,7 @@
 
     .timeline-item p {
       font-size: 0.875rem;
-    }
+    line-height: 170%;    }
 
     /* ── Contact ──────────────────────────────────────── */
 
@@ -369,6 +373,7 @@
 
     footer p {
       grid-column: 1 / span 6;
+      line-height: 170%;
     }
 
     footer span {
