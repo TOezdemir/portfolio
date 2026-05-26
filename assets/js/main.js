@@ -143,3 +143,70 @@
 
       applyTranslations();
     })();
+
+(function () {
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const translations = { /* … dein bestehendes Objekt … */ };
+
+  var currentLang = "de";
+  var langToggle = document.getElementById("langToggle");
+
+  function applyTranslations() {
+    var t = translations[currentLang];
+    document.documentElement.lang = currentLang;
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n");
+      if (t[key]) {
+        el.innerHTML = t[key];
+      }
+    });
+    if (langToggle) {
+      langToggle.textContent = currentLang === "de" ? "EN" : "DE";
+      langToggle.setAttribute(
+        "aria-label",
+        currentLang === "de" ? "Switch to English" : "Zu Deutsch wechseln"
+      );
+    }
+  }
+
+  if (langToggle) {
+    langToggle.addEventListener("click", function () {
+      currentLang = currentLang === "de" ? "en" : "de";
+      applyTranslations();
+    });
+  }
+
+  applyTranslations();
+
+  // ── Case-specific language switch ─────────────────
+  document.addEventListener("DOMContentLoaded", () => {
+    const langScopes = document.querySelectorAll("[data-lang-scope]");
+
+    langScopes.forEach(scope => {
+      const buttons = scope.querySelectorAll(".lang-btn");
+      const langBlocks = scope.querySelectorAll("[data-lang]");
+
+      // Default: DE sichtbar
+      langBlocks.forEach(block => {
+        const lang = block.getAttribute("data-lang");
+        block.style.display = lang === "de" ? "block" : "none";
+      });
+
+      buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const targetLang = btn.getAttribute("data-lang-target");
+
+          buttons.forEach(b =>
+            b.classList.toggle("is-active", b === btn)
+          );
+
+          langBlocks.forEach(block => {
+            const lang = block.getAttribute("data-lang");
+            block.style.display = lang === targetLang ? "block" : "none";
+          });
+        });
+      });
+    });
+  });
+})();
