@@ -34,8 +34,8 @@ Persönliche Portfolio-Website von Tolgay Özdemir – gebaut mit Vanilla HTML, 
 ├── index.html          # Hauptseite
 ├── vanlaack.html       # Case Study: van Laack & Partners
 ├── parasus.html        # Case Study: Parasus
-├── styles.css        # Globales Stylesheet
-└── main.js           # i18n, Navigation, Jahr-Update
+├── styles.css          # Globales Stylesheet
+└── main.js             # i18n, Navigation, Jahr-Update
 ```
 
 ---
